@@ -1,9 +1,6 @@
-#top_x_div3{
-  float: left !important;
+body{
+  background-color: red;
 }
-#top_x_div2{
-  float: left !important;
-}
-float: left !important;
-#top_x_div{
+#top_x_div  {
+  fill:tomato;
 }
