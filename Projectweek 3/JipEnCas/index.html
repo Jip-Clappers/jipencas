@@ -53,25 +53,25 @@
 
         function drawStuff2() {
           var data = new google.visualization.arrayToDataTable([
-            ['Move', 'temperatuur'],
-            ["Plant 1", 18],
-            ["Plant 2", 15],
-            ["Plant 3", 17],
-            ["Plant 4", 16],
-            ['Plant 5', 18],
-            ['Plant 6', 20],
-            ['Plant 7', 21]
+            ['Move', 'grondvochtigheid'],
+            ["Plant 1", 220],
+            ["Plant 2", 250],
+            ["Plant 3", 220],
+            ["Plant 4", 210],
+            ['Plant 5', 223],
+            ['Plant 6', 220],
+            ['Plant 7', 220]
           ]);
 
           var options = {
             width: 800,
             legend: { position: 'none' },
             chart: {
-              title: 'temperatuur van de plant',
+              title: 'grondvochtigheid van de plant',
               subtitle: '' },
             axes: {
               x: {
-                0: { side: 'top', label: 'temperatuur'} // Top x-axis.
+                0: { side: 'top', label: 'grondvochtigheid'} // Top x-axis.
               }
             },
             bar: { groupWidth: "90%" }
