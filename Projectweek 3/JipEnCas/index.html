@@ -46,8 +46,45 @@
         chart.draw(data, google.charts.Bar.convertOptions(options));
       };
     </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawStuff2);
+
+        function drawStuff2() {
+          var data = new google.visualization.arrayToDataTable([
+            ['Move', 'temperatuur'],
+            ["Plant 1", 18],
+            ["Plant 2", 15],
+            ["Plant 3", 17],
+            ["Plant 4", 16],
+            ['Plant 5', 18],
+            ['Plant 6', 20],
+            ['Plant 7', 21]
+          ]);
+
+          var options = {
+            width: 800,
+            legend: { position: 'none' },
+            chart: {
+              title: 'temperatuur van de plant',
+              subtitle: '' },
+            axes: {
+              x: {
+                0: { side: 'top', label: 'temperatuur'} // Top x-axis.
+              }
+            },
+            bar: { groupWidth: "90%" }
+          };
+
+          var chart = new google.charts.Bar(document.getElementById('top_x_div2'));
+          // Convert the Classic options to Material options.
+          chart.draw(data, google.charts.Bar.convertOptions(options));
+        };
+      </script>
   </head>
   <body>
     <div id="top_x_div" style="width: 800px; height: 600px;"></div>
+    <div id="top_x_div2" style="width: 800px; height: 600px;"></div>
   </body>
 </html>
