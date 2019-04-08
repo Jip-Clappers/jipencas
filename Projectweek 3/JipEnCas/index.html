@@ -10,118 +10,153 @@
   <link rel="stylesheet" href="Projectweek 3\JipEnCas\standaardstylesheet.css">
   <!-- Bootstrap CSS -->
   <title>Hello, world!</title>
+  <!-- Temperatuur -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['bar']
+    });
+    google.charts.setOnLoadCallback(drawStuff);
 
-      function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['plant', 'temperatuur'],
-          ["Plant 1", 18],
-          ["Plant 2", 15],
-          ["Plant 3", 17],
-          ["Plant 4", 16],
-          ['Plant 5', 18],
-          ['Plant 6', 20],
-          ['Plant 7', 21]
-        ]);
+    function drawStuff() {
+      var data = new google.visualization.arrayToDataTable([
+        ['plant', 'temperatuur'],
+        ["Plant 1", 18],
+        ["Plant 2", 15],
+        ["Plant 3", 17],
+        ["Plant 4", 16],
+        ['Plant 5', 18],
+        ['Plant 6', 20],
+        ['Plant 7', 21]
+      ]);
 
-        var options = {
-          width: 800,
-          legend: { position: 'none' },
-          chart: {
-            title: 'temperatuur van de plant',
-            subtitle: '' },
-          axes: {
-            x: {
-              0: { side: 'top', label: 'temperatuur'} // Top x-axis.
-            }
-          },
-          bar: { groupWidth: "90%" }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-        // Convert the Classic options to Material options.
-        chart.draw(data, google.charts.Bar.convertOptions(options));
+      var options = {
+        width: 800,
+        legend: {
+          position: 'none'
+        },
+        chart: {
+          title: 'temperatuur van de plant',
+          subtitle: ''
+        },
+        axes: {
+          x: {
+            0: {
+              side: 'top',
+              label: 'temperatuur'
+            } // Top x-axis.
+          }
+        },
+        bar: {
+          groupWidth: "90%"
+        }
       };
-    </script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
-        google.charts.load('current', {'packages':['bar']});
-        google.charts.setOnLoadCallback(drawStuff2);
 
-        function drawStuff2() {
-          var data = new google.visualization.arrayToDataTable([
-            ['plant', 'grondvochtigheid'],
-            ["Plant 1", 220],
-            ["Plant 2", 250],
-            ["Plant 3", 220],
-            ["Plant 4", 210],
-            ['Plant 5', 223],
-            ['Plant 6', 220],
-            ['Plant 7', 220]
-          ]);
+      var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+  </script>
+  <!-- Grondvochtigheid -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['bar']
+    });
+    google.charts.setOnLoadCallback(drawStuff2);
 
-          var options = {
-            width: 800,
-            legend: { position: 'none' },
-            chart: {
-              title: 'grondvochtigheid van de plant',
-              subtitle: '' },
-            axes: {
-              x: {
-                0: { side: 'top', label: 'grondvochtigheid'} // Top x-axis.
-              }
-            },
-            bar: { groupWidth: "90%" }
-          };
+    function drawStuff2() {
+      var data = new google.visualization.arrayToDataTable([
+        ['plant', 'grondvochtigheid'],
+        ["Plant 1", 220],
+        ["Plant 2", 250],
+        ["Plant 3", 220],
+        ["Plant 4", 210],
+        ['Plant 5', 223],
+        ['Plant 6', 220],
+        ['Plant 7', 220]
+      ]);
 
-          var chart = new google.charts.Bar(document.getElementById('top_x_div2'));
-          // Convert the Classic options to Material options.
-          chart.draw(data, google.charts.Bar.convertOptions(options));
-        };
-      </script>
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load('current', {'packages':['bar']});
-          google.charts.setOnLoadCallback(drawStuff3);
+      var options = {
+        width: 800,
+        legend: {
+          position: 'none'
+        },
+        chart: {
+          title: 'grondvochtigheid van de plant',
+          subtitle: ''
+        },
+        axes: {
+          x: {
+            0: {
+              side: 'top',
+              label: 'grondvochtigheid'
+            } // Top x-axis.
+          }
+        },
+        bar: {
+          groupWidth: "90%"
+        }
+      };
 
-          function drawStuff3() {
-            var data = new google.visualization.arrayToDataTable([
-              ['plant', 'tijd'],
-              ["Plant 1", 1554444382],
-              ["Plant 2", 1554453382],
-              ["Plant 3", 1554453382],
-              ["Plant 4", 1554453382],
-              ['Plant 5', 1554453382],
-              ['Plant 6', 1554453382],
-              ['Plant 7', 1554453382]
-            ]);
+      var chart = new google.charts.Bar(document.getElementById('top_x_div2'));
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+  </script>
+  <!-- Tijd -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['bar']
+    });
+    google.charts.setOnLoadCallback(drawStuff3);
 
-            var options = {
-              width: 800,
-              legend: { position: 'none' },
-              chart: {
-                title: 'tijd in seconde van de plant',
-                subtitle: '' },
-              axes: {
-                x: {
-                  0: { side: 'top', label: 'tijd'} // Top x-axis.
-                }
-              },
-              bar: { groupWidth: "90%" }
-            };
+    function drawStuff3() {
+      var data = new google.visualization.arrayToDataTable([
+        ['plant', 'tijd'],
+        ["Plant 1", 1554444382],
+        ["Plant 2", 1554453382],
+        ["Plant 3", 1554453382],
+        ["Plant 4", 1554453382],
+        ['Plant 5', 1554453382],
+        ['Plant 6', 1554453382],
+        ['Plant 7', 1554453382]
+      ]);
 
-            var chart = new google.charts.Bar(document.getElementById('top_x_div3'));
-            // Convert the Classic options to Material options.
-            chart.draw(data, google.charts.Bar.convertOptions(options));
-          };
-        </script>
-  </head>
-  <body>
-    <div id="top_x_div" style="width: 800px; height: 600px;"></div>
-    <div id="top_x_div2" style="width: 800px; height: 600px;"></div>
-    <div id="top_x_div3" style="width: 800px; height: 600px;"></div>
-  </body>
+      var options = {
+        width: 800,
+        legend: {
+          position: 'none'
+        },
+        chart: {
+          title: 'tijd in seconde van de plant',
+          subtitle: ''
+        },
+        axes: {
+          x: {
+            0: {
+              side: 'top',
+              label: 'tijd'
+            } // Top x-axis.
+          }
+        },
+        bar: {
+          groupWidth: "90%"
+        }
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('top_x_div3'));
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+  </script>
+</head>
+
+<body>
+  <div id="top_x_div" style="width: 800px; height: 600px;"></div>
+  <div id="top_x_div2" style="width: 800px; height: 600px;"></div>
+  <div id="top_x_div3" style="width: 800px; height: 600px;"></div>
+</body>
+
 </html>
