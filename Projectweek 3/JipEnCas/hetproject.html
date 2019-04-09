@@ -1,0 +1,288 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+
+        var chartDiv = document.getElementById('chart_div');
+
+        var data = google.visualization.arrayToDataTable([
+          ['', 'Tijd'],
+          ['Plant 1', 1554444382],
+          ['Plant 2', 1553353382],
+          ['Plant 3', 1554453382],
+          ['Plant 4', 1554453382],
+          ['Plant 5', 1554453382],
+          ['Plant 6', 1554453382],
+          ['Plant 7', 1554453382]
+        ]);
+
+        var materialOptions = {
+          width: 500,
+          chart: {
+            title: '',
+          },
+          series: {
+            0: { axis: 'Tijd' }, // Bind series 0 to an axis named 'distance'.
+          },
+          axes: {
+            y: {
+              Tijd: {label: 'Seconden'},
+
+            }
+          }
+        };
+
+        function drawMaterialChart() {
+          var materialChart = new google.charts.Bar(chartDiv);
+          materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+        }
+
+
+        drawMaterialChart();
+       
+    };
+    
+    </script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart', 'bar']});
+            google.charts.setOnLoadCallback(drawStuff);
+      
+            function drawStuff() {
+      
+              var chartDiv = document.getElementById('chart_div2');
+      
+              var data = google.visualization.arrayToDataTable([
+                ['', 'Temperatuur'],
+                ['Plant 1', 18],
+                ['Plant 2', 15],
+                ['Plant 3', 17],
+                ['Plant 4', 16],
+                ['Plant 5', 18],
+                ['Plant 6', 20],
+                ['Plant 7', 21]
+              ]);
+      
+              var materialOptions = {
+                width: 500,
+                chart: {
+                  title: '',
+                },
+                series: {
+                  0: { axis: 'Temperatuur' }, // Bind series 0 to an axis named 'distance'.
+                },
+                axes: {
+                  y: {
+                    Temperatuur: {label: 'Celsius'},
+      
+                  }
+                }
+              };
+      
+              function drawMaterialChart() {
+                var materialChart = new google.charts.Bar(chartDiv);
+                materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+              }
+      
+      
+              drawMaterialChart();
+          };
+          
+          </script>
+              <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart', 'bar']});
+                google.charts.setOnLoadCallback(drawStuff);
+          
+                function drawStuff() {
+          
+                  var chartDiv = document.getElementById('chart_div3');
+          
+                  var data = google.visualization.arrayToDataTable([
+                    ['', 'Grondvochtigheid'],
+                    ['Plant 1', 220],
+                    ['Plant 2', 250],
+                    ['Plant 3', 220],
+                    ['Plant 4', 210],
+                    ['Plant 5', 223],
+                    ['Plant 6', 220],
+                    ['Plant 7', 220]
+                  ]);
+          
+                  var materialOptions = {
+                    width: 500,
+                    chart: {
+                      title: '',
+                    },
+                    series: {
+                      0: { axis: 'Grondvochtigheid' }, // Bind series 0 to an axis named 'distance'.
+                    },
+                    axes: {
+                      y: {
+                        Grondvochtigheid: {label: 'WATER'},
+          
+                      }
+                    }
+                  };
+          
+                  function drawMaterialChart() {
+                    var materialChart = new google.charts.Bar(chartDiv);
+                    materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+                  }
+          
+          
+                  drawMaterialChart();
+              };
+              
+              </script>
+              <style>
+             *{
+                      outline: none;
+                      text-align: center;
+              }
+              #chart_div path {
+                  fill: tomato;
+              }
+              #chart_div2 path {
+                  fill: gold;
+              }
+              #chart_div3 path {
+                  fill: greenyellow;
+              }
+              #chart_div {
+                  float: left;
+                  margin-left: 17.5%;
+              }
+              #chart_div2 {
+                  float: left;
+                  margin-left: 17.5%;
+              }
+              #chart_div3 {
+                  float: left;
+                  margin-left: 17.5%;
+              }
+              .chartTitle {
+                font-size: 30px;
+                font-weight: bold;
+                margin: 15px 0px;
+              }
+              .row1{
+                width: 50%;
+                height: 100vh;
+                float: left;
+                
+              }
+               .row2 {
+                  height: 100vh;
+                  width: 50%;
+                  
+                  float: left;
+              }
+              .left {
+                  height: 100%;
+                  width: 35%;
+                  float: left;
+                  
+                  margin-left: 20%;
+              }
+              .right {
+                  height: 100%;
+                  width: 35%;
+                  float: left;
+                  
+                  margin-left: 5%;
+              }
+              .top1 {
+                  height: 15%;
+                  width: 100%;
+                  
+                  float: left;
+              }
+              .top2 {
+                  height: 15%;
+                  width: 100%;
+                  
+                  float: left;
+              }
+              .bottom1 {
+                  height: auto;
+                  width: 100%;
+                  
+                  float: left;
+              }
+              .bottom2 {
+                  height:auto;
+                  width: 100%;
+                  float: left;
+              }
+              select {
+                  width: 100%;
+                  height: 100%;
+                  border: black 5px solid;
+                  font-size: 30px;
+              }
+              </style>
+  </head>
+  <body>
+    <br><br>
+    <div class="row1">
+       <div class="chartTitle">Tijd</div>
+        <div id="chart_div" style="width: 100%; height: auto;"></div>
+        <div class="chartTitle"> Temperatuur</div>
+        <div id="chart_div2" style="width: 100%; height: auto;"></div>
+        <div class="chartTitle">Grondvochtigheid</div>
+        <div id="chart_div3" style="width: 100%; height: auto;"></div>
+    </div>
+    <div class="row2">
+        <div class="left">
+            <div class="top1">
+
+                    <select id="plantenKeuze1" onclick="vergelijk()">
+                        <option value="Plant1" onclick="vergelijk()">Plant1</option>
+                        <option value="Plant2" onclick="vergelijk()">Plant2</option>
+                        <option value="Plant3" onclick="vergelijk()">Plant3</option>
+                        <option value="Plant4" onclick="vergelijk()">Plant4</option>
+                        <option value="Plant5" onclick="vergelijk()">Plant5</option>
+                        <option value="Plant6" onclick="vergelijk()">Plant6</option>
+                        <option value="Plant7" onclick="vergelijk()">Plant7</option>
+                    </select>
+
+            </div>
+
+            <div class="bottom1">
+                <h1 id="plant1header">Voorbeeld tekst</h1>
+                    <span id="temperatuur1">Tijdvoorbeeld<br></span>
+                    <span id="grondvochtigheid1">Tijdvoorbeeld<br></span>
+                    <span id="tijd1">Tijdvoorbeeld<br></span>
+
+            </div>
+            </div>
+        <div class="right">
+            <div class="top2">
+                    <select id="plantenKeuze2" onclick="vergelijk()">
+                            <option value="Plant1" onclick="vergelijk()">Plant1</option>
+                            <option value="Plant2" onclick="vergelijk()">Plant2</option>
+                            <option value="Plant3" onclick="vergelijk()">Plant3</option>
+                            <option value="Plant4" onclick="vergelijk()">Plant4</option>
+                            <option value="Plant5" onclick="vergelijk()">Plant5</option>
+                            <option value="Plant6" onclick="vergelijk()">Plant6</option>
+                            <option value="Plant7" onclick="vergelijk()">Plant7</option>
+
+                    </select>
+    
+            </div>
+
+            <div class="bottom2">
+                    <h1 id="plant2header">Voorbeeld tekst2</h1>
+                    <span id="temperatuur2">Tijdvoorbeeld <br></span>
+                    <span id="grondvochtigheid2">Tijdvoorbeeld <br></span>
+                    <span id="tijd2">Tijdvoorbeeld <br></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script  src="script.js"></script>
+  </body>
+</html>
