@@ -30,15 +30,40 @@
         ["Plant7", 21, "blue"],
       ]);
 
-      var view = new google.visualization.DataView(data);
-      view.setColumns([0, 1,
-        {
-          calc: "stringify",
-          sourceColumn: 1,
-          type: "string",
-          role: "annotation"
+      var options = {
+        title: "Temperatuur",
+        width: 600,
+        height: 400,
+        bar: {
+          groupWidth: "95%"
         },
-        2
+        legend: {
+          position: "none"
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!-- grondvochtigheid -->
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart2);
+
+    function drawChart2() {
+      var data = google.visualization.arrayToDataTable([
+        ["Plant", "grondvochtigheid", {
+          role: "style"
+        }],
+        ["Plant1", 220, "#b87333"],
+        ["Plant2", 250, "silver"],
+        ["Plant3", 220, "gold"],
+        ["Plant4", 210, "color: #e5e4e2"],
+        ["Plant5", 223, "red"],
+        ["Plant6", 220, "yellow"],
+        ["Plant7", 220, "blue"]
       ]);
 
       var options = {
@@ -89,6 +114,8 @@
         2
       ]);
 
+      <<
+      << << < HEAD
       var options = {
         title: "Density of Precious Metals, in g/cm^3",
         width: 600,
@@ -124,7 +151,44 @@
         ["Plant5", 1554453382, "red"],
         ["Plant6", 1554453382, "yellow"],
         ["Plant7", 1554453382, "blue"]
-      ]);
+      ]); ===
+      === =
+      var options = {
+        title: "grondvochtigheid",
+        width: 600,
+        height: 400,
+        bar: {
+          groupWidth: "95%"
+        },
+        legend: {
+          position: "none"
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values2"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!--tijd -->
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart3);
+
+    function drawChart3() {
+      var data = google.visualization.arrayToDataTable([
+        ["Plant", "Density", {
+          role: "style"
+        }],
+        ["Plant1", 1554444382, "#b87333"],
+        ["Plant2", 1554453382, "silver"],
+        ["Plant3", 1554453382, "gold"],
+        ["Plant4", 1554453382, "color: #e5e4e2"],
+        ["Plant5", 1554453382, "red"],
+        ["Plant6", 1554453382, "yellow"],
+        ["Plant7", 1554453382, "blue"]
+      ]); >>>
+      >>> > 4 d3f4f8860db0e3c2a9f2deec637b933d46b9d9d
 
       var view = new google.visualization.DataView(data);
       view.setColumns([0, 1,
@@ -137,6 +201,8 @@
         2
       ]);
 
+      <<
+      << << < HEAD
       var options = {
         title: "Density of Precious Metals, in g/cm^3",
         width: 600,
@@ -158,6 +224,34 @@
   <div id="columnchart_values" style="width: 500px; height: 300px;"></div>
   <div id="columnchart_values2" style="width: 500px; height: 300px;"></div>
   <div id="columnchart_values3" style="width: 500px; height: 300px;"></div>
-</body>
+  =======
+  var options = {
+  title: "tijd",
+  width: 600,
+  height: 400,
+  bar: {groupWidth: "95%"},
+  legend: { position: "none" },
+  };
+  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values3"));
+  chart.draw(view, options);
+  }
+  </script>
+  </head>
+
+  <body>
+    <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+    <div id="columnchart_values2" style="width: 900px; height: 300px;"></div>
+    <div id="columnchart_values3" style="width: 900px; height: 300px;"></div>
+    <script>
+      var plant1 = [Temperatuur => "18", grondvochtigheid => "220", tijd => "1554444382"];
+      var plant2 = [Temperatuur => "15", grondvochtigheid => "250", tijd => "1554453382"];
+      var plant3 = [Temperatuur => "17", grondvochtigheid => "220", tijd => "1554453382"];
+      var plant4 = [Temperatuur => "16", grondvochtigheid => "210", tijd => "1554453382"];
+      var plant5 = [Temperatuur => "18", grondvochtigheid => "223", tijd => "1554453382"];
+      var plant6 = [Temperatuur => "20", grondvochtigheid => "220", tijd => "1554453382"];
+      var plant7 = [Temperatuur => "21", grondvochtigheid => "220", tijd => "1554453382"];
+    </script>
+    >>>>>>> 4d3f4f8860db0e3c2a9f2deec637b933d46b9d9d
+  </body>
 
 </html>
