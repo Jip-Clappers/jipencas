@@ -66,7 +66,9 @@
 
     function drawChart2() {
       var data = google.visualization.arrayToDataTable([
-        ["Plant", "grondvochtigheid", {role: "style"}],
+        ["Plant", "grondvochtigheid", {
+          role: "style"
+        }],
         ["Plant1", 220, "#b87333"],
         ["Plant2", 250, "silver"],
         ["Plant3", 220, "gold"],
@@ -164,6 +166,11 @@
   var Plant6 = [Temperatuur => "20", grondvochtigheid => "220", tijd => "1554453382"]
   var Plant7 = [Temperatuur => "21", grondvochtigheid => "220", tijd => "1554453382"]
   </script>
+  <div class="dropdown">
+    <button class="dropbtn"> Dropdown </button>
+    <div class="dropdown-content">
+      <a href="#"> Link 1 </a> <a href="#"> Link 2 </a> <a href="#"> Link 3 </a> </div>
+  </div>
 </body>
 
 </html>
