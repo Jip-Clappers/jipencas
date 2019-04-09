@@ -56,7 +56,6 @@
     };
   </script>
   <!-- Grondvochtigheid -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', {
       'packages': ['bar']
@@ -65,15 +64,16 @@
 
     function drawStuff2() {
       var data = new google.visualization.arrayToDataTable([
-        ['plant', 'grondvochtigheid'],
-        ["Plant 1", 220],
-        ["Plant 2", 250],
-        ["Plant 3", 220],
-        ["Plant 4", 210],
-        ['Plant 5', 223],
-        ['Plant 6', 220],
-        ['Plant 7', 220]
+        ['plant', 'grondvochtigheid', { role: 'style'}],
+        ["Plant 1", 220, '#b87333'],
+        ["Plant 2", 250, '#b87333'],
+        ["Plant 3", 220, '#b87333'],
+        ["Plant 4", 210, '#b87333'],
+        ['Plant 5', 223, '#b87333'],
+        ['Plant 6', 220, '#b87333'],
+        ['Plant 7', 220, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
       ]);
+
 
       var options = {
         width: 500,
@@ -103,7 +103,6 @@
     };
   </script>
   <!-- Tijd -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', {
       'packages': ['bar']
