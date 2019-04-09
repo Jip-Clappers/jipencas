@@ -30,7 +30,7 @@ body{
   margin-bottom: 300px;
 }
 
-.dropdown-content {
+.dropdown-content { 
   display: none;
   position: absolute;
   background-color: #f1f1f1;
