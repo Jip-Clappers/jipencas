@@ -1,7 +1,15 @@
 body{
   background-color: green;
 }
-div{
+#columnchart_values{
   float: left !important;
-  padding-left: 1px;
+  margin: auto;
+}
+#columnchart_values2{
+  float: left !important;
+  margin: auto;
+}
+#columnchart_values3{
+  float: left !important;
+  margin: auto;
 }
