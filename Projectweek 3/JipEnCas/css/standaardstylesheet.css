@@ -1,6 +1,7 @@
 body{
-  background-color: red;
+  background-color: green;
 }
-#top_x_div  {
-  fill:tomato;
+div{
+  float: left !important;
+  padding-left: 1px;
 }

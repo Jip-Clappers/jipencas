@@ -10,118 +10,154 @@
   <title>Hello, world!</title>
   <!-- Temperatuur -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-   <script type="text/javascript">
-     google.charts.load("current", {packages:['corechart']});
-     google.charts.setOnLoadCallback(drawChart);
-     function drawChart() {
-       var data = google.visualization.arrayToDataTable([
-         ["Plant", "Temperatuur", { role: "style" } ],
-         ["Plant1", 18, "#b87333"],
-         ["Plant2", 15, "silver"],
-         ["Plant3", 17, "gold"],
-         ["Plant4", 16, "color: #e5e4e2"],
-         ["Plant5", 18, "red"],
-         ["Plant6", 20, "yellow"],
-         ["Plant7", 21, "blue"],
-       ]);
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart);
 
-       var view = new google.visualization.DataView(data);
-       view.setColumns([0, 1,
-                        { calc: "stringify",
-                          sourceColumn: 1,
-                          type: "string",
-                          role: "annotation" },
-                        2]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Plant", "Temperatuur", {
+          role: "style"
+        }],
+        ["Plant1", 18, "#b87333"],
+        ["Plant2", 15, "silver"],
+        ["Plant3", 17, "gold"],
+        ["Plant4", 16, "color: #e5e4e2"],
+        ["Plant5", 18, "red"],
+        ["Plant6", 20, "yellow"],
+        ["Plant7", 21, "blue"],
+      ]);
 
-       var options = {
-         title: "Density of Precious Metals, in g/cm^3",
-         width: 600,
-         height: 400,
-         bar: {groupWidth: "95%"},
-         legend: { position: "none" },
-       };
-       var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-       chart.draw(view, options);
-   }
-   </script>
-   <!-- grondvochtigheid -->
-   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:['corechart']});
-      google.charts.setOnLoadCallback(drawChart2);
-      function drawChart2() {
-        var data = google.visualization.arrayToDataTable([
-          ["Plant", "grondvochtigheid", { role: "style" } ],
-          ["Plant1", 220, "#b87333"],
-          ["Plant2", 250, "silver"],
-          ["Plant3", 220, "gold"],
-          ["Plant4", 210, "color: #e5e4e2"],
-          ["Plant5", 223, "red"],
-          ["Plant6", 220, "yellow"],
-          ["Plant7", 220, "blue"]
-        ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation"
+        },
+        2
+      ]);
 
-        var view = new google.visualization.DataView(data);
-        view.setColumns([0, 1,
-                         { calc: "stringify",
-                           sourceColumn: 1,
-                           type: "string",
-                           role: "annotation" },
-                         2]);
-
-        var options = {
-          title: "Density of Precious Metals, in g/cm^3",
-          width: 600,
-          height: 400,
-          bar: {groupWidth: "95%"},
-          legend: { position: "none" },
-        };
-        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values2"));
-        chart.draw(view, options);
+      var options = {
+        title: "Density of Precious Metals, in g/cm^3",
+        width: 600,
+        height: 400,
+        bar: {
+          groupWidth: "95%"
+        },
+        legend: {
+          position: "none"
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
     }
-    </script>
-    <!--tijd -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <script type="text/javascript">
-       google.charts.load("current", {packages:['corechart']});
-       google.charts.setOnLoadCallback(drawChart3);
-       function drawChart3() {
-         var data = google.visualization.arrayToDataTable([
-           ["Plant", "Density", { role: "style" } ],
-           ["Plant1", 1554444382, "#b87333"],
-           ["Plant2", 1554453382, "silver"],
-           ["Plant3", 1554453382, "gold"],
-           ["Plant4", 1554453382, "color: #e5e4e2"],
-           ["Plant5", 1554453382, "red"],
-           ["Plant6", 1554453382, "yellow"],
-           ["Plant7", 1554453382, "blue"]
-         ]);
+  </script>
+  <!-- grondvochtigheid -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart2);
 
-         var view = new google.visualization.DataView(data);
-         view.setColumns([0, 1,
-                          { calc: "stringify",
-                            sourceColumn: 1,
-                            type: "string",
-                            role: "annotation" },
-                          2]);
+    function drawChart2() {
+      var data = google.visualization.arrayToDataTable([
+        ["Plant", "grondvochtigheid", {
+          role: "style"
+        }],
+        ["Plant1", 220, "#b87333"],
+        ["Plant2", 250, "silver"],
+        ["Plant3", 220, "gold"],
+        ["Plant4", 210, "color: #e5e4e2"],
+        ["Plant5", 223, "red"],
+        ["Plant6", 220, "yellow"],
+        ["Plant7", 220, "blue"]
+      ]);
 
-         var options = {
-           title: "Density of Precious Metals, in g/cm^3",
-           width: 600,
-           height: 400,
-           bar: {groupWidth: "95%"},
-           legend: { position: "none" },
-         };
-         var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values3"));
-         chart.draw(view, options);
-     }
-     </script>
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation"
+        },
+        2
+      ]);
+
+      var options = {
+        title: "Density of Precious Metals, in g/cm^3",
+        width: 600,
+        height: 400,
+        bar: {
+          groupWidth: "95%"
+        },
+        legend: {
+          position: "none"
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values2"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!--tijd -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ['corechart']
+    });
+    google.charts.setOnLoadCallback(drawChart3);
+
+    function drawChart3() {
+      var data = google.visualization.arrayToDataTable([
+        ["Plant", "Density", {
+          role: "style"
+        }],
+        ["Plant1", 1554444382, "#b87333"],
+        ["Plant2", 1554453382, "silver"],
+        ["Plant3", 1554453382, "gold"],
+        ["Plant4", 1554453382, "color: #e5e4e2"],
+        ["Plant5", 1554453382, "red"],
+        ["Plant6", 1554453382, "yellow"],
+        ["Plant7", 1554453382, "blue"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation"
+        },
+        2
+      ]);
+
+      var options = {
+        title: "Density of Precious Metals, in g/cm^3",
+        width: 600,
+        height: 400,
+        bar: {
+          groupWidth: "95%"
+        },
+        legend: {
+          position: "none"
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values3"));
+      chart.draw(view, options);
+    }
+  </script>
 </head>
 
 <body>
-<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-<div id="columnchart_values2" style="width: 900px; height: 300px;"></div>
-<div id="columnchart_values3" style="width: 900px; height: 300px;"></div>
+  <div id="columnchart_values" style="width: 500px; height: 300px;"></div>
+  <div id="columnchart_values2" style="width: 500px; height: 300px;"></div>
+  <div id="columnchart_values3" style="width: 500px; height: 300px;"></div>
 </body>
 
 </html>
