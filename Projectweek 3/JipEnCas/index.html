@@ -157,24 +157,55 @@
   <div id="columnchart_values" style="width: 500px; height: 300px;"></div>
   <div id="columnchart_values2" style="width: 500px; height: 300px;"></div>
   <div id="columnchart_values3" style="width: 500px; height: 300px;"></div>
-  <script>
-    var Plant1 = [Temperatuur => "18", grondvochtigheid => "220", tijd => "1554444382"]
-    var Plant2 = [Temperatuur => "15", grondvochtigheid => "250", tijd => "1554453382"]
-    var Plant3 = [Temperatuur => "17", grondvochtigheid => "220", tijd => "1554453382"]
-    var Plant4 = [Temperatuur => "16", grondvochtigheid => "210", tijd => "1554453382"]
-    var Plant5 = [Temperatuur => "18", grondvochtigheid => "223", tijd => "1554453382"]
-    var Plant6 = [Temperatuur => "20", grondvochtigheid => "220", tijd => "1554453382"]
-    var Plant7 = [Temperatuur => "21", grondvochtigheid => "220", tijd => "1554453382"]
-  </script>
-  <div class="dropdown">
-    <button class="dropbtn"> Dropdown </button>
-    <div class="dropdown-content">
-      <a href="#"> Plant 1 & 2 </a>
-      <a href="#"> Plant 1 & 3 </a>
-      <a href="#"> Plant 1 & 4 </a>
-      <a href="#"> Plant 1 & 5 </a>
-    </div>
+
+  <div class="buttons">
+      <div class="button1">
+          <div class="button">
+
+                  <select id="plantenKeuze1" onclick="vergelijk()">
+                      <option value="Plant1" onclick="vergelijk()">Plant1</option>
+                      <option value="Plant2" onclick="vergelijk()">Plant2</option>
+                      <option value="Plant3" onclick="vergelijk()">Plant3</option>
+                      <option value="Plant4" onclick="vergelijk()">Plant4</option>
+                      <option value="Plant5" onclick="vergelijk()">Plant5</option>
+                      <option value="Plant6" onclick="vergelijk()">Plant6</option>
+                      <option value="Plant7" onclick="vergelijk()">Plant7</option>
+                  </select>
+
+          </div>
+
+          <div class="tekst">
+              <h1 id="plant1header">Voorbeeld tekst</h1>
+                  <span id="temperatuur1">Tijdvoorbeeld<br></span>
+                  <span id="grondvochtigheid1">Tijdvoorbeeld<br></span>
+                  <span id="tijd1">Tijdvoorbeeld<br></span>
+
+          </div>
+          </div>
+      <div class="button2">
+          <div class="button">
+                  <select id="plantenKeuze2" onclick="vergelijk()">
+                          <option value="Plant1" onclick="vergelijk()">Plant1</option>
+                          <option value="Plant2" onclick="vergelijk()">Plant2</option>
+                          <option value="Plant3" onclick="vergelijk()">Plant3</option>
+                          <option value="Plant4" onclick="vergelijk()">Plant4</option>
+                          <option value="Plant5" onclick="vergelijk()">Plant5</option>
+                          <option value="Plant6" onclick="vergelijk()">Plant6</option>
+                          <option value="Plant7" onclick="vergelijk()">Plant7</option>
+
+                  </select>
+
+          </div>
+
+          <div class="tekst">
+                  <h1 id="plant2header">Voorbeeld tekst2</h1>
+                  <span id="temperatuur2">Tijdvoorbeeld <br></span>
+                  <span id="grondvochtigheid2">Tijdvoorbeeld <br></span>
+                  <span id="tijd2">Tijdvoorbeeld <br></span>
+          </div>
+          </div>
+      </div>
   </div>
 </body>
-
+<script  src="script.js"></script>
 </html>
