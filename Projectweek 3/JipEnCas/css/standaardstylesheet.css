@@ -19,5 +19,10 @@ body{
   margin-top: 100px;
 }
 .button1 {
-  margin-left: 400px;
+  margin-left: 100px;
+  float: left;
+}
+.button2 {
+  float: left;
+  margin-left: 100px;
 }
